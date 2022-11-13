@@ -4629,6 +4629,7 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+  margin-right: 60%;
 }
 
 .card-subtitle {
@@ -4638,6 +4639,10 @@ textarea.form-control-lg {
 
 .card-text:last-child {
   margin-bottom: 0;
+  margin-left: 60%;
+}
+.types {
+  margin-right: 60%;
 }
 
 .card-link + .card-link {
@@ -5471,16 +5476,19 @@ textarea.form-control-lg {
   border-color: #141619;
 }
 
+
+
 .btn-close {
   box-sizing: content-box;
   width: 1em;
   height: 1em;
   padding: 0.25em 0.25em;
-  color: #000;
+  color: #ffffff;
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   border: 0;
   border-radius: 0.25rem;
-  opacity: 0.5;
+  background-color: #ffffff;
+  
 }
 .btn-close:hover {
   color: #000;
@@ -5613,11 +5621,10 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  opacity: ;
 }
 
 .modal-backdrop {
@@ -5642,13 +5649,11 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
+  opacity:;
 }
 .modal-header .btn-close {
   padding: 0.5rem 0.5rem;
-  margin: -0.5rem -0.5rem -0.5rem auto;
+  margin: -0.5rem   auto;
 }
 
 .modal-title {
@@ -8075,6 +8080,340 @@ img.enabled {
   border-radius: 50% !important;
 }
 
+h1 {
+  letter-spacing: 3px;
+}
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  padding-top: 5rem;
+  max-width: 1200px;
+  margin: 5px;
+}
+
+.pokemon {
+  background-color: #eee;
+  border-radius: 5px;
+  width: 20rem;
+  height: 10rem;
+  background-image: url(/assets/img/pokeball.svg) ;
+  background-repeat: no-repeat;
+  background-position: right 20px;
+  background-size: 150px;
+  border-radius: 3rem !important;
+}
+#parentp {
+  position: relative;
+}
+.img-container {
+  width: 250px;
+  height: 120px;
+  padding-right: 10px;
+}
+
+.page-title {
+ padding-top: 10rem;
+ padding-left: 5rem;
+}
+
+.pokemon-image {
+  position: relative;;  
+  max-width: 100px;
+  max-height: 100px;
+  min-width: 0px;
+  min-height: 0px;
+  margin-left: 12rem;
+  margin-top: 2.5rem;
+  transition: transform .2s;
+}
+
+
+.pokemon-image-large {
+  top: 1rem;
+  right: 2rem;
+  max-width: 200px; 
+  max-height: 200px;
+  position:absolute; 
+  margin-top: 0;
+  margin-left: 0;
+  z-index: 1;
+}
+.cb-bg {
+  background-image: url(/assets/img/pokeball.svg) ;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 250px;
+  
+}
+
+
+.pokemon-image:hover {
+  transform: scale(1.25);
+}
+
+
+.pokemon .info {
+  margin-top: 0px;
+}
+
+.pokemon .info .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+.ele-fire {
+  background-color: #EF5350;
+}
+.ele-grass {
+  background-color: #387b54;
+}
+.ele-water {
+  background-color: #99eeff;
+}
+.ele-poison {
+  background-color: #867ba9;
+}
+.ele-bug {
+  background-color: #f8d5a3;
+}
+.ele-normal {
+  background-color: #f4d493;
+}
+.ele-flying {
+  background-color: #93b4d7;
+}
+.ele-fighting {
+  background-color: #c26157;
+}
+.ele-psychic {
+  background-color: #e781a6;
+}
+.ele-rock {
+  background-color: #9e9e7c;
+}
+.ele-ground {
+  background-color: #7e5e52;
+}
+.ele-electric {
+  background-color: #f2ab46;
+}
+.ele-ice {
+  background-color: #00eeff;
+}
+.ele-ghost {
+  background-color: #43182f;
+}
+.ele-dragon {
+  background-color: #97b3e6;
+}
+.ele-dark {
+  background-color: #4f4554;
+}
+.ele-steel {
+  background-color: #67786e;
+}
+.ele-fairy {
+  background-color: #dd99aa;
+}
+
+.grass-bg {
+  background-image: url(/assets/pokemon/grass.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.fire-bg {
+  background-image: url(/assets/pokemon/fire.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.water-bg {
+  background-image: url(/assets/pokemon/water.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.poison-bg {
+  background-image: url(/assets/pokemon/poison.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.bug-bg {
+  background-image: url(/assets/pokemon/bug.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.normal-bg {
+  background-image: url(/assets/pokemon/normal.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.flying-bg {
+  background-image: url(/assets/pokemon/flying.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.fighting-bg {
+  background-image: url(/assets/pokemon/fighting.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.psychic-bg {
+  background-image: url(/assets/pokemon/psychic.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.rock-bg {
+  background-image: url(/assets/pokemon/rock.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.ground-bg {
+  background-image: url(/assets/pokemon/ground.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.electric-bg {
+  background-image: url(/assets/pokemon/electric.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.ice-bg {
+  background-image: url(/assets/pokemon/ice.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.ghost-bg {
+  background-image: url(/assets/pokemon/ghost.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.dragon-bg {
+  background-image: url(/assets/pokemon/dragon.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.dark-bg {
+  background-image: url(/assets/pokemon/dark.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.steel-bg {
+  background-image: url(/assets/pokemon/steel.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+.fairy-bg {
+  background-image: url(/assets/pokemon/fairy.svg);
+  background-size: 100px;
+  background-position: left bottom;
+  background-repeat: no-repeat;  
+  padding-top: 150px;
+  opacity: 80%;
+}
+
+
+
+.stats {
+  background-color: #04414d;
+  border-radius: 10px;
+  color: floralwhite;
+  
+}
+.table th {
+  width: 20% !important;
+}
+.pokemon .info .name {
+  top: 0
+  letter-spacing: 1px;
+}
+.name {
+  position: absolute;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.type {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.dex-pill {
+  position: absolute;
+  margin-top: 7.5rem;
+  margin-left: 4rem;
+}
+
+.id {
+  margin-top : 2rem;
+  margin-right: 2rem;
+}
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+#player {
+  width: 13%;
+ }​
 .rounded-pill {
   border-radius: 50rem !important;
 }
@@ -11545,7 +11884,7 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
+  padding-top: 0rem;
   padding-bottom: 5rem;
   max-width: 75rem;
 }
@@ -11562,7 +11901,7 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
+    padding-top: 0rem;
     padding-bottom: 5rem;
   }
 }

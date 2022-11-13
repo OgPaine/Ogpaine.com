@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="A collection or streaming tools. Gamepadviewer skins & Emote/Badge resizer more to come" />
+    <meta name="keywords"
+        content="gamepad viewer, overlay, streaming, controller, custom, XBOX, PS4,Emote,resizer,badge">
+    <meta name="author" content="Og_paine" />
+    <title>Og_Paine streaming collection </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EP3SQEQ8N"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9EP3SQEQ8N');
+</script>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-primary fixed-top sideNav1" id="sideNav">
+        <div class="sideNav2"></div>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Og_Paine</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.png" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-left" href="index">About</a></li>
+                <li class="nav-item"><a class="nav-left" href="gamepads">Gamepads</a></li>
+                <li class="nav-item"><a class="nav-left" href="obs">Obs Plug-ins &#38; Scripts</a></li>
+                <li class="nav-item"><a class="nav-left" href="resizer">Emote &#38;#38; Badge Resizer</a></li><li class="nav-item"><a class="nav-left" href="pokemon">Pokemon Index</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content-->
+
+    <body id="page-top">
+        <!-- Page Content-->
+        <div class="container_poke">
+            <!-- About-->
+            <div class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <!-- Button trigger modal -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#a001">
+                        Launch demo modal
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#a005">
+                        Launch demo modal
+                    </a>
+
+                    <div class="img-container"><a href="#" data-bs-toggle="modal" data-bs-target="#a${id}"> <h4 class="name  text-light">BULBASAUR #001</h4><a/>
+                      <sm class="type text-light fw-bold mb-4">Type: <span>Type: grass, poison</span> </sm>
+                      <img loading="lazy" class="pokemon-image" src="https://raw.githubusercontent.com/OgPaine/Ogpaine.com/main/pokemon%20compressed/001.png" alt="${name}">
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="a001" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row ">
+                                            <div class="col-12">
+                                                <div class="card ele-${type} rounded-3">
+                                                    <div class="card-body cb-bg">
+                                                        <h5 class="card-title text-light">${name}${id}</h5>
+                                                        <p class="card-text font-weight-bold text-light">${types}</p>
+                                                        <div class="${type}-bg"></div>
+                                                        <img class="pokemon-image-large center-block"
+                                                            src="https://raw.githubusercontent.com/OgPaine/Ogpaine.com/main/pokemonhq/001.png"
+                                                            alt="">
+                                                            <div class="stats mt-3 overflow-hidden">
+                                                            <table class="table text-light table-borderless ">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <h3 class="text-light pt-2 ms-3">Base Stats</h3>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">HP</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${hp}</span> <div class="col">
+                                                                                <div class="progress ms-2 me-1" style="height: 10px;">
+                                                                                  <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${hp}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">Attack</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${attack}</span> <div class="col">
+                                                                                <div class="progress ms-2 me-1" style="height: 10px;">
+                                                                                  <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${attack}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">Defense</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${defense}</span> <div class="col">
+                                                                                <div class="progress ms-2 me-1" style="height: 10px;">
+                                                                                  <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${defense}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">Sp. Attack</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${specialAttack}</span> <div class="col">
+                                                                                <div class="progress ms-2 me-1" style="height: 10px;">
+                                                                                  <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${specialAttack}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">Sp. Defense</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${specialDefense}</span> <div class="col">
+                                                                                <div class="progress ms-2 me-1" style="height: 10px;">
+                                                                                  <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(65px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">Speed</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${speed}</span> <div class="col">
+                                                                                <div class="progress ms-2 me-1" style="height: 10px;">
+                                                                                  <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${speed}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <th scope="row" class="text-start">Total</th>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <span class="fw-bold ">${total}</span>
+                                                                                </div>
+                                                                        </div> 
+                                                                    </td>
+                                                                  </tr>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                            </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Modal -->
+<div class="modal fade" id="a005" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="card ele-${type} rounded-3">
+                            <div class="card-body cb-bg">
+                                <h5 class="card-title text-light">${name}${id}</h5>
+                                <p class="card-text font-weight-bold text-light">${types}</p>
+                                <div class="${type}-bg"></div>
+                                <img class="pokemon-image-large center-block"
+                                    src="https://raw.githubusercontent.com/OgPaine/Ogpaine.com/main/pokemonhq/006.png"
+                                    alt="">
+                                    <div class="stats mt-3 overflow-hidden">
+                                    <table class="table text-light table-borderless ">
+                                        <thead>
+                                          <tr>
+                                            <h3 class="text-light pt-2 ms-3">Base Stats</h3>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row" class="text-start">HP</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${hp}</span> <div class="col">
+                                                        <div class="progress ms-2 me-1" style="height: 10px;">
+                                                          <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${hp}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="text-start">Attack</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${attack}</span> <div class="col">
+                                                        <div class="progress ms-2 me-1" style="height: 10px;">
+                                                          <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${attack}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                            <th scope="row" class="text-start">Defense</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${defense}</span> <div class="col">
+                                                        <div class="progress ms-2 me-1" style="height: 10px;">
+                                                          <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${defense}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                            <th scope="row" class="text-start">Sp. Attack</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${specialAttack}</span> <div class="col">
+                                                        <div class="progress ms-2 me-1" style="height: 10px;">
+                                                          <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${specialAttack}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                            <th scope="row" class="text-start">Sp. Defense</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${specialDefense}</span> <div class="col">
+                                                        <div class="progress ms-2 me-1" style="height: 10px;">
+                                                          <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(65px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                            <th scope="row" class="text-start">Speed</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${speed}</span> <div class="col">
+                                                        <div class="progress ms-2 me-1" style="height: 10px;">
+                                                          <div class="progress-bar  ele-${type}" role="progressbar" style="width: calc(${speed}px)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="255"></div>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="text-start">Total</th>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="fw-bold ">${total}</span>
+                                                        </div>
+                                                </div> 
+                                            </td>
+                                          </tr>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/pokemon.js"></script>
+    </body>
+
+</html>
