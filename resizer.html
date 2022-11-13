@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="A collection or streaming tools. Gamepadviewer skins & Emote/Badge resizer more to come" />
+  <meta name="keywords" content="gamepad viewer, overlay, streaming, controller, custom, XBOX, PS4,Emote,resizer,badge">
+  <meta name="author" content="Og_paine" />
+  <title>Og_Paine streaming collection </title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EP3SQEQ8N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-9EP3SQEQ8N');
+</script>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-primary fixed-top sideNav1" id="sideNav"> <div class="sideNav2"></div>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Og_Paine</span>
+      <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+          src="assets/img/profile.png" alt="..." /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+        class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-left" href="/shiny-journy/index.html">About</a></li>
+        <li class="nav-item"><a class="nav-left" href="/shiny-journy/gamepad.html">Gamepads</a></li>
+        <li class="nav-item"><a class="nav-left" href="/shiny-journy/obs.html">Obs Plug-ins &#38; Scripts</a></li>
+        <li class="nav-item"><a class="nav-left" href="/shiny-journy/resizer.html">Emote &#38; Badge Resizer</a></li>
+      </ul>
+    </div>
+  </nav><div>
+      
+            <!-- Page Content-->
+            <div class="container-fluid p-0">
+              <!-- About-->
+              <section class="resume-section" id="about">
+                <section class="resume-section" id="Emote">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Twith Emote Resizer</h2>
+                          <p>
+                          <p class="lead">Drag an image anywhere on this page. This will bring up a cropper you
+                            can use to crop your emote. After cropping, it will resize the image into the sizes Twitch
+                            requires for emotes and/or sub badges. You can right-click the resized images to download them as
+                            a PNG, or hit Download All to download them in a zip file.</p>
+                            <p class="lead">All image processing is done client-side, no image data is ever sent anywhere else.
+                          </p>
+      
+                          <div class="modal fade" id="cropModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="cropModalTitle">Crop your Emote</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <img id="source" />
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="lead">
+                            <h2>Emotes</h2>
+                            <div class="e-28px">
+                              28x28:<br />
+                              <canvas id="c28" width="28" height="28"></canvas>
+                            </div>
+                            <div class="e-56px">
+                              56x56:<br />
+                              <canvas id="c56" width="56" height="56"></canvas>
+                            </div>
+                            <div class="e-112px">
+                              112x112:<br />
+                              <canvas id="c112" width="112" height="112"></canvas>
+                            </div>
+                          </div>
+                          <div class="lead">
+                            <h2>Badges</h2>
+                            <div class="b-18px">
+                              18x18:<br />
+                              <canvas id="c18" width="18" height="18"></canvas>
+                            </div>
+                            <div class="b-36px">
+                              36x36:<br />
+                              <canvas id="c36" width="36" height="36"></canvas>
+                            </div>
+      
+                            <div class="b-72px">
+                              72x72:<br />
+                              <canvas id="c72" width="72" height="72">what th is</canvas>
+                            </div><br />
+      
+                            <button id="downloadTrigger" type="button" class="btn btn-primary" onclick="downloadAll()"
+                              name="Download All" hidden>Download All</button>
+                          </div>
+                          <h3>Example</h3>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col">
+                                <p class="lead">Dark Mode: </p>
+                                <div class="x-18">
+                                  <canvas id="c181" width="18" height="18"></canvas>Og_Paine:<canvas id="c281" width="28"
+                                    height="28"></canvas>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <p class="lead">Light Mode:</p>
+                                <div class="x-181">
+                                  <canvas id="c182" width="18" height="18"></canvas>Og_Paine:<canvas id="c282" width="28"
+                                    height="28"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+              </section>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+        integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/pica/dist/pica.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.2/jszip.min.js"
+        integrity="sha256-gy5W5/rXWluWXFRvMWFFMVhocfpBe7Tf4SW2WMfjs4E=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"
+        integrity="sha256-FPJJt8nA+xL4RU6/gsriA8p8xAeLGatoyTjldvQKGdE=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
